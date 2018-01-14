@@ -11,8 +11,3 @@ properties:
   coverage-endpoint:
     type: string
     required: false
-
-
-
-CC_TEST_REPORTER_ID
-CC_TEST_REPORTER_COVERAGE_ENDPOINT
