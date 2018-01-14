@@ -1,0 +1,18 @@
+name: test-reporter
+version: 0.4.2
+description: Step to run the codeclimate test-reporter
+keywords:
+  - codeclimate
+  - test-reporter
+properties:
+  id:
+    type: string
+    required: false
+  coverage-endpoint:
+    type: string
+    required: false
+
+
+
+CC_TEST_REPORTER_ID
+CC_TEST_REPORTER_COVERAGE_ENDPOINT

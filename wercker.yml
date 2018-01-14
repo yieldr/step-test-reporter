@@ -1,0 +1,18 @@
+box: wercker/default
+build:
+  steps:
+
+  - shellcheck
+
+  - script:
+      name: install codeclimate test-reporter
+      code: |
+        export TEST_REPORTER_VERSION="0.4.2"
+        curl -L -o test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-$TEST_REPORTER_VERSION-linux-amd64
+        chmod +x test-reporter
+        ./test-reporter --version
+
+  - script:
+      name: copy binaries
+      code: |
+        cp "test-reporter" "LICENSE" "README.md" "run.sh" "wercker.yml" "wercker-step.yml" "$WERCKER_OUTPUT_DIR"
