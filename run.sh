@@ -48,12 +48,9 @@ main() {
     args="$args --debug=\"$WERCKER_TEST_REPORTER_DEBUG\""
   fi
 
-  if [ -n "$WERCKER_TEST_REPORTER_ARGUMENTS" ]; then
-    echo "WERCKER_TEST_REPORTER_ARGUMENTS=$WERCKER_TEST_REPORTER_ARGUMENTS"
-    args="$args $WERCKER_TEST_REPORTER_ARGUMENTS"
-  fi
+  raw_args=$WERCKER_TEST_REPORTER_ARGUMENTS
 
-  eval "$test_reporter" "$cmd" "$args"
+  eval "$test_reporter" "$cmd" "$args" "$raw_args"
 }
 
 main
