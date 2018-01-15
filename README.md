@@ -12,7 +12,11 @@ This step allows the user to send test reports to [Code Climate](https://codecli
 - `sum-coverage`    Combine (sum) multiple pre-formatted coverage payloads into one.
 - `upload-coverage` Upload pre-formatted coverage payloads to Code Climate servers.
 
-# Args:
+# Arguments:
+
+- `arguments` (optional) Pass arguments to test-reporter
+
+# Options:
 
 - `batch-size`          (optional, default 500) Batch size for source files (default 500)
 - `coverage-endpoint`   (optional, default "https://api.codeclimate.com/v1/test_reports") Endpoint to upload coverage information to
@@ -29,6 +33,7 @@ deploy:
 	  		id: pydjvVvCgIEyKOgIakHyYPy3QyN6B5mbW7PfocaCv5qxvPzJpXf1TdqEZdGqFbs
 	  		coverage-input-type: gocov
 	  		command: after-build
+	  		arguments: coverage.out
 ```
 
 # License

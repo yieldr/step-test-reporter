@@ -32,3 +32,6 @@ properties:
     type: string
     required: true
     default: after-build
+  arguments:
+    type: string
+    required: false
