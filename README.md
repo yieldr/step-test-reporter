@@ -29,11 +29,11 @@ This step allows the user to send test reports to [Code Climate](https://codecli
 ```
 deploy:
 	steps:
-	  - yieldr/test-reporter@0.4.2:
-	  		id: pydjvVvCgIEyKOgIakHyYPy3QyN6B5mbW7PfocaCv5qxvPzJpXf1TdqEZdGqFbs
-	  		coverage-input-type: gocov
-	  		command: after-build
-	  		arguments: coverage.out
+		- yieldr/test-reporter@0.4.2:
+			id: pydjvVvCgIEyKOgIakHyYPy3QyN6B5mbW7PfocaCv5qxvPzJpXf1TdqEZdGqFbs
+			coverage-input-type: gocov
+			command: after-build
+			arguments: coverage.out
 ```
 
 # License
