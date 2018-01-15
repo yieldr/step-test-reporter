@@ -5,9 +5,30 @@ keywords:
   - codeclimate
   - test-reporter
 properties:
-  id:
+  batch-size:
     type: string
     required: false
   coverage-endpoint:
     type: string
     required: false
+  coverage-input-type:
+    type: string
+    required: false
+  exit-code:
+    type: string
+    required: false
+  id:
+    type: string
+    required: false
+  prefix:
+    type: string
+    required: false
+
+  debug:
+    type: string
+    required: false
+
+  command:
+    type: string
+    required: true
+    default: after-build
