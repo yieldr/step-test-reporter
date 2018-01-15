@@ -14,7 +14,7 @@ This step allows the user to send test reports to [Code Climate](https://codecli
 
 # Args:
 
-- `batch-size`          (optional, default "500") Batch size for source files (default 500)
+- `batch-size`          (optional, default 500) Batch size for source files (default 500)
 - `coverage-endpoint`   (optional, default "https://api.codeclimate.com/v1/test_reports") Endpoint to upload coverage information to
 - `coverage-input-type` (optional) Type of input source to use [clover, cobertura, coverage.py, excoveralls, gcov, gocov, jacoco, lcov, simplecov]
 - `id`                  (optional) Your repo's test reporter identifier. Read [here](https://docs.codeclimate.com/docs/finding-your-test-coverage-token) on how to find yours.
