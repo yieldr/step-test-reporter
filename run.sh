@@ -51,7 +51,7 @@ main() {
   raw_args=$WERCKER_TEST_REPORTER_ARGUMENTS
 
   echo "Running codeclimate test-reporter command"
-  echo "$(basename $test_reporter) $cmd $args $raw_args"
+  echo "$(basename "$test_reporter") $cmd $args $raw_args"
 
   eval "$test_reporter" "$cmd" "$args" "$raw_args"
 }
