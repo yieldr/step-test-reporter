@@ -42,12 +42,10 @@ The MIT License (MIT)
 
 # Changelog
 
-<!--
-## 1.1.0
 
-- Update to kubectl to version `1.1.3`
--->
+## 0.5.0
 
+- Add more commands and arguments. Upstream codeclimate/test-reporter is still in version `v0.4.2`.
 
 ## 0.4.2
 
