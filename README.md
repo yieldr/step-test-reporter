@@ -29,7 +29,7 @@ This step allows the user to send test reports to [Code Climate](https://codecli
 ```
 deploy:
 	steps:
-		- yieldr/test-reporter@0.4.2:
+		- yieldr/test-reporter:
 			id: pydjvVvCgIEyKOgIakHyYPy3QyN6B5mbW7PfocaCv5qxvPzJpXf1TdqEZdGqFbs
 			coverage-input-type: gocov
 			command: after-build
@@ -42,11 +42,6 @@ The MIT License (MIT)
 
 # Changelog
 
-
-## 0.5.0
-
-- Add more commands and arguments. Upstream codeclimate/test-reporter is still in version `v0.4.2`.
-
-## 0.4.2
+## 0.1.0
 
 - Initial release
