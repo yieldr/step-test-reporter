@@ -1,4 +1,4 @@
-# yieldr/test-reporter [![wercker status](https://app.wercker.com/status/e8ea0bce480755230ffa3230c679d009/s "wercker status")](https://app.wercker.com/project/bykey/e8ea0bce480755230ffa3230c679d009)
+# yieldr/test-reporter [![wercker status](https://app.wercker.com/status/68ee7f0720da8802584d17e6c1faff96/s "wercker status")](https://app.wercker.com/project/bykey/68ee7f0720da8802584d17e6c1faff96)
 
 This step allows the user to send test reports to [Code Climate](https://codeclimate.com/).
 
